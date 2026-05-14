@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/site/www.geldofpoultry.com/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/site/www.geldofpoultry.com/$1"
+    }
+  ]
+}
