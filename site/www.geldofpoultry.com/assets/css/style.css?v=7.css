@@ -874,6 +874,18 @@ html[dir=rtl] .header-menu-languages .dropdown .select span {
   width: 100%;
   height: 100%;
 }
+/* NNP: logo asset stacks light+dark variants; crop to top (light) variant */
+.header-logo .nnp-logo-img,
+.footer-logo .nnp-logo-img {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
 .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,7 +1000,7 @@ html[dir=rtl] .header-menu-languages .dropdown .select span {
   overflow: hidden;
   display: block;
   overflow-y: auto;
-  z-index: 9;
+  z-index: 30;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.4s ease;
@@ -1042,12 +1054,20 @@ html[dir=rtl] .header-menu-languages .dropdown .select span {
   list-style: none;
 }
 .header-menu-socials li:not(.header-menu-socials li:last-of-type) {
-  margin-right: 5px;
+  margin-right: 1.5rem;
 }
 .header-menu-socials li a {
   display: block;
-  width: 1.7rem;
-  height: 1.7rem;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #2f267f;
+  font-size: inherit;
+  line-height: 1.3;
+}
+.header-menu-socials li a:hover {
+  color: #009fe3;
 }
 .header-menu-socials li a:hover svg path {
   fill: #009fe3;
