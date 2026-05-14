@@ -874,17 +874,12 @@ html[dir=rtl] .header-menu-languages .dropdown .select span {
   width: 100%;
   height: 100%;
 }
-/* NNP: logo asset stacks light+dark variants; crop to top (light) variant */
 .header-logo .nnp-logo-img,
 .footer-logo .nnp-logo-img {
   display: block;
-  width: 100%;
+  width: auto;
   max-width: 150px;
-  height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top center;
-     object-position: top center;
+  height: auto;
 }
 .header-main {
   display: -webkit-box;
